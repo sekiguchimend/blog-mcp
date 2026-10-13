@@ -1,0 +1,36 @@
+{
+  "name": "blog-mcp",
+  "version": "1.0.0",
+  "description": "MCP server to author and manage the NodeFlare blog (Neon-backed CMS, via the NodeFlare admin API)",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "blog-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "blog",
+    "cms",
+    "nodeflare",
+    "model-context-protocol"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.26.0",
+    "dotenv": "^16.4.7",
+    "markdown-it": "^14.1.0",
+    "sanitize-html": "^2.13.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "@types/node": "^22.0.0",
+    "@types/sanitize-html": "^2.13.0",
+    "typescript": "^5.7.0"
+  }
+}
